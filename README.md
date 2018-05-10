@@ -1,7 +1,5 @@
-# ISO 3166-1 Library with Nationality Extension
-This library package provides a set of country list.
-
-[![License](https://img.shields.io/packagist/l/mcdanci/iso3166-nationality.svg?style=flat-square)](https://packagist.org/packages/mcdanci/iso3166)
+# ISO 3166-1 Data Library with Nationality Extension
+A library providing ISO 3166-1 country data with nationality extension.
 
 ISO 3166-1 country codes and nationalities listing in the following formats:
 
@@ -10,8 +8,8 @@ ISO 3166-1 country codes and nationalities listing in the following formats:
 - MySQL
 - PHP (as array)
 
-Data taken from:
-- https://en.wikipedia.org/wiki/ISO_3166-1
-- https://en.wikipedia.org/wiki/List_of_adjectival_and_demonymic_forms_for_countries_and_nations
+Data is taken from Wikipedia:
+- [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1)
+- [List of adjectival and demonymic forms for countries and nations](https://en.wikipedia.org/wiki/List_of_adjectival_and_demonymic_forms_for_countries_and_nations)
 
-The `gen` folder contains a PHP file that generates the various output files from the main file `gen/master-list.csv`.
+The `gen` folder contains a PHP file that generates the various output files from the main data file `gen/master-list.csv`.
