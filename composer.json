@@ -1,4 +1,5 @@
 {
+    "name": "mcdanci/iso3166",
     "require": {
         "league/iso3166": "^2.1"
     }
