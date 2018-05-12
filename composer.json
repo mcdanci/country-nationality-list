@@ -1,6 +1,37 @@
 {
   "name": "mcdanci/iso3166",
+  "description": "A library providing ISO 3166-1 data of country & nationality",
+  "keywords": [
+    "ISO",
+    "3166-1",
+    "country",
+    "nationality"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "McDanci",
+      "email": "mc@dancis.info"
+    }
+  ],
   "require": {
+    "php": ">=5.6",
     "league/iso3166": "^2.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.6 || ^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "McDanci\\ISO3166\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "McDanci\\ISO3166\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
