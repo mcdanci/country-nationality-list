@@ -1,3 +1,6 @@
+# Development
 .idea/
-vendor/
 /docs/TODO
+
+# Test
+vendor/

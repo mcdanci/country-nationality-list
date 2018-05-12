@@ -1,8 +1,9 @@
+# Format
 *                   text=auto
-
 *.json              text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=2
 *.php               text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent,tabwidth=4 diff=php
 
+# For Composer
 /docs/              export-ignore
 /tests/             export-ignore
 /.gitattributes     export-ignore
