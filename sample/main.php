@@ -6,23 +6,19 @@
  */
 
 !defined('DIRECTORY_SEPARATOR') || define('DS', DIRECTORY_SEPARATOR);
-
 require dirname(__DIR__) . DS . 'vendor' . DS . 'autoload.php';
+use \McDanci\ISO3166\ISO3166Nationality as Nationality;
 
 //region Cases
-
-function case_0()
-{
-    return new League\ISO3166\ISO3166;
-}
 
 /**
  * Lookup data by name.
  * @return array
  */
-function case_1($name = 'Finland')
+function case_1($name)
 {
-    return case_0()->name($name);
+    $name = $name ?: 'Finland';
+    return Nationality::getInstance()->name($name);
 }
 
 /**
@@ -30,9 +26,10 @@ function case_1($name = 'Finland')
  * @param string $alpha2
  * @return array
  */
-function case_2($alpha2 = 'IR')
+function case_2($alpha2)
 {
-    return case_0()->alpha2($alpha2);
+    $alpha2 = $alpha2 ?: 'IR';
+    return Nationality::getInstance()->alpha2($alpha2);
 }
 
 /**
@@ -40,9 +37,10 @@ function case_2($alpha2 = 'IR')
  * @param string $alpha3
  * @return array
  */
-function case_3($alpha3 = 'IRQ')
+function case_3($alpha3)
 {
-    return case_0()->alpha3($alpha3);
+    $alpha3 = $alpha3 ?: 'IRQ';
+    return Nationality::getInstance()->alpha3($alpha3);
 }
 
 /**
@@ -50,12 +48,13 @@ function case_3($alpha3 = 'IRQ')
  * @param int $numeric
  * @return array
  */
-function case_4($numeric = 388)
+function case_4($numeric)
 {
-    return case_0()->numeric((string)$numeric);
+    $numeric = $numeric ?: 388;
+    return Nationality::getInstance()->numeric((string)$numeric);
 }
 
 //endregion Cases
 
-$action = include __DIR__ . DS . 'selection.php';
-var_dump($action());
+list($action, $arg) = include __DIR__ . DS . 'selection.php';
+var_dump($action($arg));

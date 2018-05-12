@@ -1,4 +1,4 @@
 <?php
-$id = 0;
+$id = 1;
 
-return 'case_' . $id;
+return ['case_' . $id, null];
